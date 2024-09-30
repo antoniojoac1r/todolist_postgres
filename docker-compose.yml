@@ -12,6 +12,9 @@ services:
 
   app:
     image: todolist:postgresrds
+    build:
+      context: .
+      dockerfile: ./Dockerfile
     env_file: ".env"
     volumes:
       - ./instance:/app/instance
