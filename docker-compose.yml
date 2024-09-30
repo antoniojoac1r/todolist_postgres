@@ -18,5 +18,5 @@ services:
     networks:
       - todolist
 
-network:
+networks:
   todolist:
